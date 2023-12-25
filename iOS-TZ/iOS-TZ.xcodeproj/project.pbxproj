@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5584FD32B309CC9003FD8CA /* iOS_TZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5584FD22B309CC9003FD8CA /* iOS_TZApp.swift */; };
+		F5584FD52B309CC9003FD8CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5584FD42B309CC9003FD8CA /* ContentView.swift */; };
+		F5584FD72B309CCA003FD8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5584FD62B309CCA003FD8CA /* Assets.xcassets */; };
+		F5584FDA2B309CCA003FD8CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5584FD92B309CCA003FD8CA /* Preview Assets.xcassets */; };
+		F55C20A32B39A5EF007751B5 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C20A22B39A5EF007751B5 /* RoomViewModel.swift */; };
+		F55C20A62B39A5F8007751B5 /* RoomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C20A52B39A5F8007751B5 /* RoomData.swift */; };
+		F55C20A92B39BB03007751B5 /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C20A82B39BB03007751B5 /* ReservationViewModel.swift */; };
+		F55C20AC2B39BB2C007751B5 /* ReservationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C20AB2B39BB2C007751B5 /* ReservationData.swift */; };
+		F55C20AF2B39BE8D007751B5 /* ReservationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C20AE2B39BE8D007751B5 /* ReservationDetailsView.swift */; };
+		F55C20B22B39CB3F007751B5 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = F55C20B12B39CB3F007751B5 /* iPhoneNumberField */; };
+		F55C20B42B39DDBF007751B5 /* TouristInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C20B32B39DDBE007751B5 /* TouristInfoView.swift */; };
+		F55C20B72B39E2E8007751B5 /* AllDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C20B62B39E2E8007751B5 /* AllDoneView.swift */; };
+		F5AF4F052B3316E900C777C8 /* HotelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF4F042B3316E900C777C8 /* HotelView.swift */; };
+		F5AF4F072B33195900C777C8 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF4F062B33195800C777C8 /* RoomView.swift */; };
+		F5AF4F092B331AEC00C777C8 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF4F082B331AEC00C777C8 /* ImageCarouselView.swift */; };
+		F5AF4F0B2B331C2200C777C8 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF4F0A2B331C2200C777C8 /* CellView.swift */; };
+		F5D5BEF82B35C65300B80B5C /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5BEF72B35C65300B80B5C /* ReservationView.swift */; };
+		F5D5BEFA2B35C6AD00B80B5C /* HotelRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5BEF92B35C6AD00B80B5C /* HotelRatingView.swift */; };
+		F5D5BEFD2B35C80700B80B5C /* HotelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5BEFC2B35C80700B80B5C /* HotelData.swift */; };
+		F5D5BEFF2B35C81B00B80B5C /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5BEFE2B35C81B00B80B5C /* HotelViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5584FCF2B309CC9003FD8CA /* iOS-TZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-TZ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5584FD22B309CC9003FD8CA /* iOS_TZApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_TZApp.swift; sourceTree = "<group>"; };
+		F5584FD42B309CC9003FD8CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5584FD62B309CCA003FD8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5584FD92B309CCA003FD8CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F55C20A22B39A5EF007751B5 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
+		F55C20A52B39A5F8007751B5 /* RoomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomData.swift; sourceTree = "<group>"; };
+		F55C20A82B39BB03007751B5 /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
+		F55C20AB2B39BB2C007751B5 /* ReservationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationData.swift; sourceTree = "<group>"; };
+		F55C20AE2B39BE8D007751B5 /* ReservationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsView.swift; sourceTree = "<group>"; };
+		F55C20B32B39DDBE007751B5 /* TouristInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristInfoView.swift; sourceTree = "<group>"; };
+		F55C20B62B39E2E8007751B5 /* AllDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoneView.swift; sourceTree = "<group>"; };
+		F5AF4F042B3316E900C777C8 /* HotelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelView.swift; sourceTree = "<group>"; };
+		F5AF4F062B33195800C777C8 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		F5AF4F082B331AEC00C777C8 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		F5AF4F0A2B331C2200C777C8 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		F5D5BEF72B35C65300B80B5C /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
+		F5D5BEF92B35C6AD00B80B5C /* HotelRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelRatingView.swift; sourceTree = "<group>"; };
+		F5D5BEFC2B35C80700B80B5C /* HotelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelData.swift; sourceTree = "<group>"; };
+		F5D5BEFE2B35C81B00B80B5C /* HotelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5584FCC2B309CC9003FD8CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55C20B22B39CB3F007751B5 /* iPhoneNumberField in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5584FC62B309CC9003FD8CA = {
+			isa = PBXGroup;
+			children = (
+				F5584FD12B309CC9003FD8CA /* iOS-TZ */,
+				F5584FD02B309CC9003FD8CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5584FD02B309CC9003FD8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5584FCF2B309CC9003FD8CA /* iOS-TZ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5584FD12B309CC9003FD8CA /* iOS-TZ */ = {
+			isa = PBXGroup;
+			children = (
+				F5584FE12B309D15003FD8CA /* Core */,
+				F5584FE02B309D0E003FD8CA /* App */,
+				F5584FD62B309CCA003FD8CA /* Assets.xcassets */,
+				F5584FD82B309CCA003FD8CA /* Preview Content */,
+			);
+			path = "iOS-TZ";
+			sourceTree = "<group>";
+		};
+		F5584FD82B309CCA003FD8CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5584FD92B309CCA003FD8CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5584FE02B309D0E003FD8CA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F5584FD22B309CC9003FD8CA /* iOS_TZApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F5584FE12B309D15003FD8CA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20B52B39E2D7007751B5 /* Payment */,
+				F5D5BEF62B35C64400B80B5C /* Reservation */,
+				F5AF4F022B3316D900C777C8 /* Hotel */,
+				F5584FE22B309D34003FD8CA /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F5584FE22B309D34003FD8CA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5BEFB2B35C80000B80B5C /* Model */,
+				F5584FE42B30A1C3003FD8CA /* ViewModel */,
+				F5584FE32B30A1B6003FD8CA /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F5584FE32B30A1B6003FD8CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5584FD42B309CC9003FD8CA /* ContentView.swift */,
+				F5AF4F082B331AEC00C777C8 /* ImageCarouselView.swift */,
+				F5AF4F0A2B331C2200C777C8 /* CellView.swift */,
+				F5D5BEF92B35C6AD00B80B5C /* HotelRatingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5584FE42B30A1C3003FD8CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5BEFE2B35C81B00B80B5C /* HotelViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F55C20A12B39A5E1007751B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20A22B39A5EF007751B5 /* RoomViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F55C20A42B39A5F3007751B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20A52B39A5F8007751B5 /* RoomData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F55C20A72B39BAFA007751B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20A82B39BB03007751B5 /* ReservationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F55C20AA2B39BB23007751B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20AB2B39BB2C007751B5 /* ReservationData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F55C20AD2B39BD26007751B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5BEF72B35C65300B80B5C /* ReservationView.swift */,
+				F55C20AE2B39BE8D007751B5 /* ReservationDetailsView.swift */,
+				F55C20B32B39DDBE007751B5 /* TouristInfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F55C20B52B39E2D7007751B5 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20B62B39E2E8007751B5 /* AllDoneView.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		F5AF4F022B3316D900C777C8 /* Hotel */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20A42B39A5F3007751B5 /* Model */,
+				F55C20A12B39A5E1007751B5 /* ViewModel */,
+				F5AF4F032B3316E000C777C8 /* View */,
+			);
+			path = Hotel;
+			sourceTree = "<group>";
+		};
+		F5AF4F032B3316E000C777C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF4F042B3316E900C777C8 /* HotelView.swift */,
+				F5AF4F062B33195800C777C8 /* RoomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5D5BEF62B35C64400B80B5C /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				F55C20AD2B39BD26007751B5 /* View */,
+				F55C20AA2B39BB23007751B5 /* Model */,
+				F55C20A72B39BAFA007751B5 /* ViewModel */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		F5D5BEFB2B35C80000B80B5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5BEFC2B35C80700B80B5C /* HotelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5584FCE2B309CC9003FD8CA /* iOS-TZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5584FDD2B309CCA003FD8CA /* Build configuration list for PBXNativeTarget "iOS-TZ" */;
+			buildPhases = (
+				F5584FCB2B309CC9003FD8CA /* Sources */,
+				F5584FCC2B309CC9003FD8CA /* Frameworks */,
+				F5584FCD2B309CC9003FD8CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-TZ";
+			packageProductDependencies = (
+				F55C20B12B39CB3F007751B5 /* iPhoneNumberField */,
+			);
+			productName = "iOS-TZ";
+			productReference = F5584FCF2B309CC9003FD8CA /* iOS-TZ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5584FC72B309CC9003FD8CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F5584FCE2B309CC9003FD8CA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F5584FCA2B309CC9003FD8CA /* Build configuration list for PBXProject "iOS-TZ" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5584FC62B309CC9003FD8CA;
+			packageReferences = (
+				F55C20B02B39CB3F007751B5 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
+			productRefGroup = F5584FD02B309CC9003FD8CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5584FCE2B309CC9003FD8CA /* iOS-TZ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5584FCD2B309CC9003FD8CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5584FDA2B309CCA003FD8CA /* Preview Assets.xcassets in Resources */,
+				F5584FD72B309CCA003FD8CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5584FCB2B309CC9003FD8CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55C20A92B39BB03007751B5 /* ReservationViewModel.swift in Sources */,
+				F55C20B42B39DDBF007751B5 /* TouristInfoView.swift in Sources */,
+				F55C20A62B39A5F8007751B5 /* RoomData.swift in Sources */,
+				F5D5BEFD2B35C80700B80B5C /* HotelData.swift in Sources */,
+				F5584FD52B309CC9003FD8CA /* ContentView.swift in Sources */,
+				F5AF4F072B33195900C777C8 /* RoomView.swift in Sources */,
+				F5D5BEFF2B35C81B00B80B5C /* HotelViewModel.swift in Sources */,
+				F55C20B72B39E2E8007751B5 /* AllDoneView.swift in Sources */,
+				F55C20AC2B39BB2C007751B5 /* ReservationData.swift in Sources */,
+				F5D5BEF82B35C65300B80B5C /* ReservationView.swift in Sources */,
+				F5AF4F0B2B331C2200C777C8 /* CellView.swift in Sources */,
+				F5D5BEFA2B35C6AD00B80B5C /* HotelRatingView.swift in Sources */,
+				F5584FD32B309CC9003FD8CA /* iOS_TZApp.swift in Sources */,
+				F55C20AF2B39BE8D007751B5 /* ReservationDetailsView.swift in Sources */,
+				F5AF4F092B331AEC00C777C8 /* ImageCarouselView.swift in Sources */,
+				F55C20A32B39A5EF007751B5 /* RoomViewModel.swift in Sources */,
+				F5AF4F052B3316E900C777C8 /* HotelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F5584FDB2B309CCA003FD8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5584FDC2B309CCA003FD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5584FDE2B309CCA003FD8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-TZ/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dias.saiynov-nu.edu.kz.iOS-TZ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5584FDF2B309CCA003FD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-TZ/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dias.saiynov-nu.edu.kz.iOS-TZ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5584FCA2B309CC9003FD8CA /* Build configuration list for PBXProject "iOS-TZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5584FDB2B309CCA003FD8CA /* Debug */,
+				F5584FDC2B309CCA003FD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5584FDD2B309CCA003FD8CA /* Build configuration list for PBXNativeTarget "iOS-TZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5584FDE2B309CCA003FD8CA /* Debug */,
+				F5584FDF2B309CCA003FD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F55C20B02B39CB3F007751B5 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F55C20B12B39CB3F007751B5 /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F55C20B02B39CB3F007751B5 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F5584FC72B309CC9003FD8CA /* Project object */;
+}
